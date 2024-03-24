@@ -1,26 +1,27 @@
-version: '3.8'
+---
+version: "3.8"
 services:
-  movies:
-    image: hpakala53/paytmmovies:latest
+  amazonprime:
+    image: rajkumar116/amazonprime:latest
     ports:
-      - "81:80"
+      - 81:80
     deploy:
       replicas: 3
-  train:
-    image: hpakala53/paytmtrain:latest
+  amazonmusic:
+    image: rajkumar116/amazonmusic:latest
     ports:
-      - "82:80"
+      - 82:80
     deploy:
       replicas: 3
-  dth:
-    image: hpakala53/paytmdth:latest
+  amazonalexa:
+    image: rajkumar116/amazonalexa:latest
     ports:
-      - "83:80"
+      - 83:80
     deploy:
       replicas: 3
-  recharge:
-    image: hpakala53/paytmrecharge:latest
+  amazonaudible:
+    image: rajkumar116/amazonaudible:latest
     ports:
-      - "84:80"
+      - 84:80
     deploy:
       replicas: 3
